@@ -13,7 +13,7 @@
     <!-- footer Section Starts Here -->
     <section class="footer">
         <div class="container text-center">
-            <p>All rights reserved. D'SAIZAR </p>
+            <p>All rights reserved. By Amrlamn </p>
         </div>
     </section>
     <!-- footer Section Ends Here -->
