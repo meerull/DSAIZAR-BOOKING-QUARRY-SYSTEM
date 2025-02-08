@@ -62,12 +62,9 @@ CREATE TABLE `tbl_category` (
 --
 
 INSERT INTO `tbl_category` (`id`, `title`, `image_name`, `featured`, `active`) VALUES
-(4, 'Pizza', 'soil_Category_790.jpg', 'No', 'Yes'),
-(5, 'Burger', 'soil_Category_344.jpg', 'No', 'Yes'),
-(9, 'Biriyani', 'soil_Category_385.jpg', 'No', 'Yes'),
-(10, 'Chinese', 'soil_Category_697.jpg', 'Yes', 'Yes'),
-(11, 'Arabic', 'soil_Category_447.jpg', 'Yes', 'Yes'),
-(12, 'Indian', 'soil_Category_333.jpg', 'Yes', 'Yes');
+(4, 'Soils', 'soil_Category_266.jpg', 'Yes', 'Yes'),
+(5, 'Sand', 'soil_Category_369.jpg', 'Yes', 'Yes'),
+(9, 'Rock', 'soil_Category_270.jpg', 'Yes', 'Yes'),
 
 -- --------------------------------------------------------
 
