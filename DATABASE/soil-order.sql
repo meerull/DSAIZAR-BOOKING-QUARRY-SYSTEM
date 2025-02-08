@@ -88,32 +88,13 @@ CREATE TABLE `tbl_soil` (
 --
 
 INSERT INTO `tbl_soil` (`id`, `title`, `description`, `price`, `image_name`, `category_id`, `featured`, `active`) VALUES
-(4, 'Best Burger', 'Burger with Ham and lots of Cheese,onion and sauce', '250.00', 'soil-Name-6340.jpg', 5, 'No', 'Yes'),
-(5, 'Smoky BBQ Pizza', 'Best Firewood Pizza in Town made with thin cheese', '525.00', 'soil-Name-8298.jpg', 4, 'No', 'Yes'),
-(10, 'Chicken Biriyani', 'Richly flavored aromatic rice layered with marinated chicken ', '120.00', 'soil-Name-6512.jpg', 9, 'Yes', 'Yes'),
-(11, 'Hyderabadi Veg Biryani', 'Mixed vegetables inside layers of fluffy basmati rice', '110.00', 'soil-Name-306.jpg', 9, 'No', 'Yes'),
-(12, 'Thalaserry Beef Biryani', 'Unlike other biryani dishes thalassery biryani is unique', '170.00', 'soil-Name-7044.jpg', 9, 'No', 'Yes'),
-(13, 'Mutton Biriyani', 'Succulent pieces of mutton slow cooked on bed of aromatic rice', '300.00', 'soil-Name-114.jpg', 9, 'No', 'Yes'),
-(15, 'Mediterranean Pizza', 'Pizza sauce, mozzarella, pesto and fresh mozzarella.', '325.00', 'soil-Name-1876.jpg', 4, 'No', 'Yes'),
-(16, 'Classic Paneer Pizza', 'Multigrain base, yumm paneer tikka with thin crust', '308.00', 'soil-Name-5931.jpg', 4, 'No', 'Yes'),
-(17, 'Pepper Al Faham', 'Al Faham is basically the Arabian barbecued chicken usually grilled', '230.00', 'soil-Name-4667.jpg', 11, 'Yes', 'Yes'),
-(18, 'Schezwan Chicken Fried Rice', 'Wholesome stir-fried rice topped with juicy chicken chunks ', '225.00', 'soil-Name-5970.jpg', 10, 'Yes', 'Yes'),
-(19, 'Butter Chicken', 'Perfectly cooked tendered pieces of chicken with a rich tomato and onion ', '255.00', 'soil-Name-5958.jpg', 12, 'Yes', 'Yes'),
-(20, 'Chilly Chicken', 'Chicken marinated with herbs with batter and gravy made with Chinese sauces', '235.00', 'soil-Name-2105.jpg', 10, 'Yes', 'Yes'),
-(21, ' Kanthari Al Faham', 'Kanthari alfaham chicken is one of the most spicy version of chicken Alfaham ', '245.00', 'soil-Name-7380.jpg', 11, 'No', 'Yes'),
-(22, 'Desi Spice Khichdi Box', 'Special Chef-curated Khichdi bowls that will take you on Great Indian spice tour', '229.00', 'soil-Name-1329.jpg', 12, 'No', 'Yes'),
-(23, 'Peri Peri Alfaham Mandhi', 'Spicy peri peri alfaham alongs with kuzhimandhi with salad mayonise', '240.00', 'soil-Name-9164.jpg', 11, 'No', 'Yes'),
-(24, 'Kuzhi Mandhi', 'A flavor-packed combo with mandi chicken , mandi rice and dips ', '199.00', 'soil-Name-6628.jpg', 11, 'Yes', 'Yes'),
-(25, 'Rumali Chicken Shawarma', 'Chicken shawarma wrap with romali rotti contanis chicken meat mayonise', '150.00', 'soil-Name-7422.jpg', 11, 'No', 'Yes'),
-(26, 'Chicken Tikka Masala', 'Chicken tikka masala served as a portion goes best with rice,breads.\r\n\r\n', '280.00', 'soil-Name-3204.jpg', 12, 'No', 'Yes'),
-(27, 'Kadai Paneer', 'Delicious Indian delicacy made of paneer, thick gravy of cream', '157.00', 'soil-Name-2376.jpg', 12, 'No', 'Yes'),
-(28, 'Chicken Fried Rice', 'A deliciously hearty combo of wholesome chicken fried rice.', '215.00', 'soil-Name-9721.jpg', 12, 'No', 'Yes'),
-(29, 'Chicken Noodles', 'Chicken noodles served for one person from hygeinic kitchen of 12 to 12.', '215.00', 'soil-Name-1771.jpg', 10, 'No', 'Yes'),
-(30, 'Chilli Gobi', 'A deliciously aromatic dish with deep-fried cauliflower', '122.00', 'soil-Name-6250.jpg', 10, 'No', 'Yes'),
-(31, 'McChicken Burger', 'Tender and juicy chicken patty cooked to perfection with mayonnaise', '131.00', 'soil-Name-7625.jpg', 5, 'No', 'Yes'),
-(32, 'Tandoori Zinger Burger', 'Chicken zinger with a delicious tandoori sauce', '199.00', 'soil-Name-3025.jpg', 5, 'No', 'Yes'),
-(33, 'Cheese Shawarma Burger', 'kahif special big chicken cheese made with a cheesy twist', '333.00', 'soil-Name-391.jpg', 5, 'No', 'Yes'),
-(34, 'Kizhi Porotta ', '3 porotta is mixed with beef curry and served ', '199.00', 'soil-Name-4088.jpg', 12, 'No', 'Yes');
+(35, 'Fine sand', '', '30.00', 'soil-Name-4902.jpg', 14, 'Yes', 'Yes'),
+(36, 'Red Soil', 'Good for tree', '30.00', 'soil-Name-1139.jpg', 13, 'Yes', 'Yes'),
+(37, 'Small Rock', ' ', '45.00', 'soil-Name-234.jpeg', 15, 'Yes', 'Yes'),
+(39, 'Big Rock', '', '30.00', 'soil-Name-1867.jpg', 15, 'No', 'Yes'),
+(40, 'Limestone', '', '50.00', 'soil-Name-3992.jpg', 13, 'No', 'Yes'),
+(41, 'clay sand', '', '35.00', 'soil-Name-2216.jpg', 13, 'No', 'Yes'),
+(42, 'Top Soil', '.', '40.00', 'soil-Name-6421.jpg', 13, 'Yes', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -137,12 +118,11 @@ CREATE TABLE `tbl_order` (
 --
 
 INSERT INTO `tbl_order` (`id`, `soil`, `price`, `qty`, `total`, `order_date`, `status`, `u_id`) VALUES
-(13, 'Biriyani', '200.00', 1, '200.00', '2022-11-12 12:50:24', 'Delivered', 6),
-(14, 'Best Burger', '250.00', 1, '250.00', '2022-11-12 12:56:39', 'Delivered', 6),
-(15, 'Best Burger', '250.00', 1, '250.00', '2022-11-12 02:20:43', 'Delivered', 7),
-(16, 'Smoky BBQ Pizza', '525.00', 1, '525.00', '2022-11-12 02:20:53', 'Delivered', 7),
-(17, 'Thalaserry Beef Biryani', '170.00', 1, '170.00', '2022-11-13 07:44:42', 'Ordered', 6),
-(18, 'Peri Peri Alfaham Mandhi', '240.00', 1, '240.00', '2022-11-13 01:54:44', 'Delivered', 6);
+(19, 'Fine sand', '30.00', 1, '30.00', '2025-01-30 01:41:13', 'Ordered', 25),
+(20, 'Fine sand', '30.00', 1, '30.00', '2025-01-30 10:01:59', 'Delivered', 6),
+(21, 'Red Soil', '30.00', 3, '90.00', '2025-01-30 14:48:16', 'On Delivery', 26),
+(22, 'Fine sand', '30.00', 5, '150.00', '2025-02-01 15:28:14', 'Delivered', 36);
+
 
 -- --------------------------------------------------------
 
@@ -166,10 +146,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `customer_name`, `customer_email`, `customer_contact`, `customer_address`, `created_at`) VALUES
-(6, 'jaison_e_mathew', '$2y$10$d//Ey6eukf3xhnFlHUhrwet/xaTQEmhmjyvEF.MTT1a5NgBbMbhke', 'Jaison E Mathew', 'jaisone.bca2023@saintgits.org', 9526519828, 'Enchakattil Chengannur', '2022-11-12 17:20:06'),
-(7, 'febin_binoy', '$2y$10$3.3PY8VemjmGEiYcynAB7uoRrBeAok/Sw3rv2Zo1/.P0bNi66gNbe', 'Febin Binoy', 'febin.bca2023@saintgits.org', 9038394034, 'Febin Villa Chenganassery', '2022-11-12 18:48:54'),
-(8, 'varghese_babu', '$2y$10$eF5TxEyY1AS/xuJMurhvferx76E1fRe3ABxzBZQMZtJf4p3J32RRO', 'Varghese Babu', 'varghesebabu@gmail.com', 9284049384, 'Varghese Villa Chengannur', '2022-11-12 19:06:00'),
-(12, 'jaison_thomas', '$2y$10$emiUy3AQRP6FMXlEb3lY4urt8jwjzHM.FZK2WZShJDLUpquCqKnAW', 'Jaison Thomas', 'jaisonthomas@gmail.com', 9319392053, 'Jaison Villa ,chengannur', '2022-11-14 21:06:09');
+(35, 'rayyan', '$2y$10$Gy6aUbgcfidoBL5TlfHyMu8IORap1nBg60Q1sqh/Hnf32dyPewqIa', 'mohd rayyan', 'rayyan@gmail.com', 9526519828, 'perlis', '2024-11-12 17:20:06'),
+(36, 'adham', '$2y$10$ViiTNdK7o2PDAXE0BjUHnOReE6CA91gjxU6v/XB402NJiZzvr7JMO', 'AHMAD ADHAM BIN MOHD SAIFI', 'adham@gmail.com', 9038394034, 'Machang, Kelantan', '2024-11-12 18:48:54'),
+(37, 'AIMAN', '$2y$10$faixVpekjH7qyog4CsSD7u/KdpfnJ0B06rMHR8rWBHgooHGfT7vrS', 'AIMAN HAKIM BIN AZIZ ', 'aiman@gmail.com', 9284049384, 'Arau, Perlis', '2024-11-12 19:06:00'),
+(38, 'azyan', '$2y$10$xqjkDZrGsWsDhecSXf2zCu9rNskNrBC9QH6SgsV2pdQhvwHym3HBa', 'AZYAN SORFINA BINTI MUHAMAD FAUZI', 'azyan@gmail.com', 9319392053, 'Kangar, Perlis', '2024-11-14 21:06:09');
 
 --
 -- Indexes for dumped tables
